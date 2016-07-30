@@ -1,0 +1,9 @@
+Package: rppbio
+Type: Package
+Title: Functions for processing and analysing PPBIO data
+Version: 0.1.0
+Author: Darren Norris
+Maintainer: Who to complain to <yourfault@somewhere.net>
+Description: More about what it does (maybe more than one line)
+License: GPL-3
+LazyData: TRUE
