@@ -27,8 +27,8 @@ ordered along an environmental gradient.
 \code{generico} plots direct ordination of species abundances.
 }
 \details{
-Ported from: https://ppbio.inpa.gov.br/sites/default/files/Generico\%20R .    
-    Tried and tested code used to develop package and github.
+Ported from: https://ppbio.inpa.gov.br/sites/default/files/Generico\%20R . 
+ Tried and tested code used to develop package and github.
 }
 \examples{
 \dontrun{
@@ -51,6 +51,6 @@ Examples of use:
   
 Norris, D. et al. 2016. Too rare for non-timber resource harvest? 
 Meso-scale composition and distribution of arborescent palms in an Amazonian sustainable-use forest.
-Forest Ecology and Management 377: 182-191. <http://dx.doi.org/10.1016/j.foreco.2016.07.008.>
+Forest Ecology and Management 377: 182-191. http://dx.doi.org/10.1016/j.foreco.2016.07.008 .
 }
 

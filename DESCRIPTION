@@ -18,4 +18,6 @@ License: file LICENSE
 LazyData: TRUE
 Imports:
   graphics
+Suggests:
+  vegan
 RoxygenNote: 5.0.1
