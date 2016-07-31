@@ -13,7 +13,7 @@ Description: Provides functions for working with ecological data
     Integrates various ecological, spatial and data management 
     functions to provide user friendly outputs. Depends heavily on
     ecological (e.g. vegan), spatial (e.g. sp and raster) and
-    data managemnt (e.g plyr, reshape2) packages.
+    data management (e.g plyr, reshape2) packages.
 License: GPL (>= 3)
 LazyData: TRUE
 Imports:
