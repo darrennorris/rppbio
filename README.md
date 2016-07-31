@@ -2,15 +2,16 @@
 Provides some hopefully useful functions for processing and analysing PPBIO data.
 
 ## Installation
-To install development version from github, firstly install current devtools package:
+Install development version from github.
 
+1. install current devtools package:
 
 `install.packages("devtools")`
 
-Then, install the rppbio package with the following in R:
+2. Use devtools to install the rppbio package from github:
 
 `devtools::install_github("darrennorris/rppbio")`
 
-Then, load:
+3. load:
 
 `library("rppbio")`

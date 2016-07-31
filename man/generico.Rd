@@ -28,7 +28,7 @@ This fuction is used to plot direct ordination of species abundances.
 }
 \details{
 Ported from 
-<https://ppbio.inpa.gov.br/sites/default/files/Generico%20R.doc>
+`<https://ppbio.inpa.gov.br/sites/default/files/Generico%20R.doc>`
 Tried and tested code used to develop package and github.
 }
 \examples{
