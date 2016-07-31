@@ -1,9 +1,12 @@
-#' Title generico
-#'
+#' generico
+#' @description
 #' This fuction is used to make direct ordination of species abundances.
+#' @author
 #' Created by Victor Lemes Landeiro. Updated 18-07-2008.
-#' Ported from https://ppbio.inpa.gov.br/sites/default/files/Generico%20R.doc
-#' Tried and tested code used to setup package and github
+#' @details   
+#' Ported from 
+#' <https://ppbio.inpa.gov.br/sites/default/files/Generico%20R.doc>
+#' Tried and tested code used to develop package and github.
 #' 
 #' @param tabela A data.frame with the species data. Species in columns.
 #' @param gradiente Vector with the environmental gradient for each row of the species table.
@@ -12,7 +15,7 @@
 #' @param eixoY Name of y axis legend (character)
 #' @param eixoX Name of x axis legend (character)
 #'
-#' @return Graph
+#' @return Plots bar charts of species abundances ordered along the gradient. 
 #' @export
 #'
 #' @examples

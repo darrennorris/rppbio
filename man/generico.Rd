@@ -2,7 +2,7 @@
 % Please edit documentation in R/generico.R
 \name{generico}
 \alias{generico}
-\title{Title generico}
+\title{generico}
 \usage{
 generico(tabela, gradiente, at, grad, eixoY, eixoX)
 }
@@ -20,15 +20,20 @@ generico(tabela, gradiente, at, grad, eixoY, eixoX)
 \item{eixoX}{Name of x axis legend (character)}
 }
 \value{
-Graph
+Plots bar charts of species abundances ordered along the gradient.
 }
 \description{
 This fuction is used to make direct ordination of species abundances.
-Created by Victor Lemes Landeiro. Updated 18-07-2008.
-Ported from https://ppbio.inpa.gov.br/sites/default/files/Generico%20R.doc
-Tried and tested code used to setup package and github
+}
+\details{
+Ported from 
+<https://ppbio.inpa.gov.br/sites/default/files/Generico%20R.doc>
+Tried and tested code used to develop package and github.
 }
 \examples{
 generico()
+}
+\author{
+Created by Victor Lemes Landeiro. Updated 18-07-2008.
 }
 
