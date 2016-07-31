@@ -11,7 +11,7 @@ generico(tabela, gradiente, at, grad, eixoY, eixoX)
 
 \item{gradiente}{Vector with the environmental gradient for each row of the species table.}
 
-\item{at}{Used to alter position of teh species names. Start with 1 and increase until obtain desired location.}
+\item{at}{Used to alter position of the species names. Start with 1 and increase until obtain desired location.}
 
 \item{grad}{Character of the name of the environmental gradient to appear on the graph.}
 

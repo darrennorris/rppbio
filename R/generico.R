@@ -10,7 +10,7 @@
 #' 
 #' @param tabela A data.frame with the species data. Species in columns.
 #' @param gradiente Vector with the environmental gradient for each row of the species table.
-#' @param at Used to alter position of teh species names. Start with 1 and increase until obtain desired location.
+#' @param at Used to alter position of the species names. Start with 1 and increase until obtain desired location.
 #' @param grad  Character of the name of the environmental gradient to appear on the graph.
 #' @param eixoY Name of y axis legend (character)
 #' @param eixoX Name of x axis legend (character)
