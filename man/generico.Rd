@@ -24,12 +24,11 @@ Plots bar charts of species abundances from sites
 ordered along an environmental gradient.
 }
 \description{
-This fuction is used to plot direct ordination of species abundances.
+\code{generico} plots direct ordination of species abundances.
 }
 \details{
-Ported from:         
-https://ppbio.inpa.gov.br/sites/default/files/Generico%20R   
-Tried and tested code used to develop package and github.
+Ported from: https://ppbio.inpa.gov.br/sites/default/files/Generico\%20R .    
+    Tried and tested code used to develop package and github.
 }
 \examples{
 \dontrun{
