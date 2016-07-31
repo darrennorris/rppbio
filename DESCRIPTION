@@ -3,10 +3,10 @@ Type: Package
 Title: Functions for processing and analysing PPBIO data
 Version: 0.1.0
 Authors@R: c(
-	person("Darren", "Norris", role = c("cre", "aut"),  email = "myfault@somewhere.net"),
-	person("Victor L.", "Landeiro", role = "ctb"))
+	person("Darren", "Norris",  email = "myfault@somewhere.net", role = c("cre", "aut") ),
+	person("Victor L.", "Landeiro", role = "aut"))
 Author: Darren Norris [cre, aut],
-  Victor L. Landeiro [ctb]
+  Victor L. Landeiro [aut]
 Maintainer: Darren Norris <myfault@somewhere.net>
 Description: Provides functions for working with ecological data
     collected as part of the Brazilian "PPBIO" program.
