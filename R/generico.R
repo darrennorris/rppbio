@@ -1,12 +1,22 @@
-# generico
-#
-# ### Created by Victor Lemes Landeiro ######
-# ### Updated 18-07-2008  ###
-#
-# Ported from https://ppbio.inpa.gov.br/sites/default/files/Generico%20R.doc
-#
-# Tried and tested code used to setup package and github
-
+#' Title generico
+#'
+#' This fuction is used to make direct ordination of species abundances.
+#' Created by Victor Lemes Landeiro. Updated 18-07-2008.
+#' Ported from https://ppbio.inpa.gov.br/sites/default/files/Generico%20R.doc
+#' Tried and tested code used to setup package and github
+#' 
+#' @param tabela A data.frame with the species data. Species in columns.
+#' @param gradiente Vector with the environmental gradient for each row of the species table.
+#' @param at Used to alter position of teh species names. Start with 1 and increase until obtain desired location.
+#' @param grad  Character of the name of the environmental gradient to appear on the graph.
+#' @param eixoY Name of y axis legend (character)
+#' @param eixoX Name of x axis legend (character)
+#'
+#' @return Graph
+#' @export
+#'
+#' @examples
+#' generico()
 generico<-function(tabela,gradiente,at,grad,eixoY,eixoX){
   tabela<-as.matrix(tabela)
   gradiente<-as.matrix(gradiente)
