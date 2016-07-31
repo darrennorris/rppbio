@@ -1,6 +1,6 @@
 #' generico
 #' @description
-#' This fuction is used to make direct ordination of species abundances.
+#' This fuction is used to plot direct ordination of species abundances.
 #' @author
 #' Created by Victor Lemes Landeiro. Updated 18-07-2008.
 #' @details   
@@ -15,12 +15,27 @@
 #' @param eixoY Name of y axis legend (character)
 #' @param eixoX Name of x axis legend (character)
 #'
-#' @return Plots bar charts of species abundances ordered along the gradient. 
+#' @return Plots bar charts of species abundances from sites 
+#' ordered along an environmental gradient. 
 #' @export
 #' @importFrom "graphics" "axis" "barplot" "layout" "mtext" "par" "plot"
+#' @references Examples of use:
+#'   
+#' Norris, D. et al. 2016. Too rare for non-timber resource harvest? 
+#' Meso-scale composition and distribution of arborescent palms in an Amazonian sustainable-use forest.
+#' Forest Ecology and Management 377: 182-191. <http://dx.doi.org/10.1016/j.foreco.2016.07.008.>  
+#' 
 #' @examples
 #' \dontrun{
-#' generico()
+#' # load species and environmental data
+#' library(vegan) 
+#' data("mite")
+#' data("mite.env")  
+#' dfsp <- mite[,1:10] #select first 10 mite species 
+#' 
+#' #plot 
+#' generico(tabela = dfsp, gradiente = mite.env$WatrCont,
+#' at=80,grad = "Water",eixoX="Site", eixoY="Count") 
 #' }
 generico<-function(tabela,gradiente,at,grad,eixoY,eixoX){
   tabela<-as.matrix(tabela)
@@ -44,7 +59,7 @@ generico<-function(tabela,gradiente,at,grad,eixoY,eixoX){
        frame.plot=F,xaxt="n",type="h",col="black",
        ylim=c(min(gradiente),max(gradiente)))
   axis(side=2,at=c(0,max(gradiente)),las=2)
-  mtext(grad,4,outer=T,font=2,line=-10,padj=-18.5,las=2)
+  mtext(grad,3,outer=T,font=2,line=-5,padj=-15.5,las=2)
   for(i in 1:ncol(ordenado)){
     barplot(ordenado[,i],bty="l",axisnames=F,axes=FALSE,col="black")
     #axis(side=2,at=max(ordenado[,i]),las=2)
@@ -53,3 +68,5 @@ generico<-function(tabela,gradiente,at,grad,eixoY,eixoX){
   mtext(eixoX,1,outer=T,font=2,line=1.2)
   mtext(eixoY,2,font=2,outer=T,line=-2)
 }
+
+

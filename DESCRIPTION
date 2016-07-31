@@ -2,10 +2,19 @@ Package: rppbio
 Type: Package
 Title: Functions for processing and analysing PPBIO data
 Version: 0.1.0
-Author: Darren Norris
-Maintainer: Who to complain to <yourfault@somewhere.net>
-Description: More about what it does (maybe more than one line)
-License: GPL-3
+Authors@R: c(
+	person("Darren", "Norris", role = c("cre", "aut"),  email = "myfault@somewhere.net"),
+	person("Victor L.", "Landeiro", role = "ctb"))
+Author: Darren Norris [cre, aut],
+  Victor L. Landeiro [ctb]
+Maintainer: Darren Norris <myfault@somewhere.net>
+Description: Provides functions for working with ecological data
+    collected as part of the Brazilian "PPBIO" program.
+    Integrates various ecological, spatial and data management 
+    functions to provide user friendly outputs. Depends heavily on
+    ecological (e.g. vegan), spatial (e.g. sp and raster) and
+    data managemnt (e.g plyr, reshape2) packages.
+License: GPL (>= 3)
 LazyData: TRUE
 Imports:
   graphics

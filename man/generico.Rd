@@ -20,10 +20,11 @@ generico(tabela, gradiente, at, grad, eixoY, eixoX)
 \item{eixoX}{Name of x axis legend (character)}
 }
 \value{
-Plots bar charts of species abundances ordered along the gradient.
+Plots bar charts of species abundances from sites 
+ordered along an environmental gradient.
 }
 \description{
-This fuction is used to make direct ordination of species abundances.
+This fuction is used to plot direct ordination of species abundances.
 }
 \details{
 Ported from 
@@ -32,10 +33,25 @@ Tried and tested code used to develop package and github.
 }
 \examples{
 \dontrun{
-generico()
+# load species and environmental data
+library(vegan) 
+data("mite")
+data("mite.env")  
+dfsp <- mite[,1:10] #select first 10 mite species 
+
+#plot 
+generico(tabela = dfsp, gradiente = mite.env$WatrCont,
+at=80,grad = "Water",eixoX="Site", eixoY="Count") 
 }
 }
 \author{
 Created by Victor Lemes Landeiro. Updated 18-07-2008.
+}
+\references{
+Examples of use:
+  
+Norris, D. et al. 2016. Too rare for non-timber resource harvest? 
+Meso-scale composition and distribution of arborescent palms in an Amazonian sustainable-use forest.
+Forest Ecology and Management 377: 182-191. <http://dx.doi.org/10.1016/j.foreco.2016.07.008.>
 }
 
