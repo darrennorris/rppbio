@@ -17,7 +17,7 @@
 #'
 #' @return Plots bar charts of species abundances ordered along the gradient. 
 #' @export
-#'
+#' @importFrom "graphics" "axis" "barplot" "layout" "mtext" "par" "plot"
 #' @examples
 #' \dontrun{
 #' generico()
