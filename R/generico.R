@@ -4,8 +4,8 @@
 #' @author
 #' Created by Victor Lemes Landeiro. Updated 18-07-2008.
 #' @details   
-#' Ported from: https://ppbio.inpa.gov.br/sites/default/files/Generico\%20R .    
-#'     Tried and tested code used to develop package and github.
+#'  Ported from: https://ppbio.inpa.gov.br/sites/default/files/Generico\%20R . 
+#'  Tried and tested code used to develop package and github.
 #' 
 #' @param tabela A data.frame with the species data. Species in columns.
 #' @param gradiente Vector with the environmental gradient for each row of the species table.
@@ -22,7 +22,7 @@
 #'   
 #' Norris, D. et al. 2016. Too rare for non-timber resource harvest? 
 #' Meso-scale composition and distribution of arborescent palms in an Amazonian sustainable-use forest.
-#' Forest Ecology and Management 377: 182-191. <http://dx.doi.org/10.1016/j.foreco.2016.07.008.>  
+#' Forest Ecology and Management 377: 182-191. http://dx.doi.org/10.1016/j.foreco.2016.07.008 .  
 #' 
 #' @examples
 #' \dontrun{
