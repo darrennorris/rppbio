@@ -7,4 +7,5 @@ Maintainer: Who to complain to <yourfault@somewhere.net>
 Description: More about what it does (maybe more than one line)
 License: GPL-3
 LazyData: TRUE
+Imports: graphics
 RoxygenNote: 5.0.1

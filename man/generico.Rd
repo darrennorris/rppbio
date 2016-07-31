@@ -31,7 +31,9 @@ Ported from
 Tried and tested code used to develop package and github.
 }
 \examples{
+\dontrun{
 generico()
+}
 }
 \author{
 Created by Victor Lemes Landeiro. Updated 18-07-2008.
