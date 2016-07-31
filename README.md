@@ -10,3 +10,7 @@ To install development version from github, firstly install current devtools pac
 Then, install the rppbio package with the following in R:
 
 `devtools::install_github("darrennorris/rppbio")`
+
+Then, load:
+
+`library("rppbio")`
