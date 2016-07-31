@@ -27,8 +27,8 @@ ordered along an environmental gradient.
 This fuction is used to plot direct ordination of species abundances.
 }
 \details{
-Ported from 
-$<https://ppbio.inpa.gov.br/sites/default/files/Generico%20R.doc>$
+Ported from:         
+https://ppbio.inpa.gov.br/sites/default/files/Generico%20R   
 Tried and tested code used to develop package and github.
 }
 \examples{

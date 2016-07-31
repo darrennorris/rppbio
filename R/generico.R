@@ -4,8 +4,8 @@
 #' @author
 #' Created by Victor Lemes Landeiro. Updated 18-07-2008.
 #' @details   
-#' Ported from 
-#' $<https://ppbio.inpa.gov.br/sites/default/files/Generico%20R.doc>$
+#' Ported from:         
+#' https://ppbio.inpa.gov.br/sites/default/files/Generico%20R   
 #' Tried and tested code used to develop package and github.
 #' 
 #' @param tabela A data.frame with the species data. Species in columns.
