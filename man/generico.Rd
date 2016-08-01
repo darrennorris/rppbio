@@ -7,7 +7,7 @@
 generico(tabela, gradiente, at, grad, eixoY, eixoX)
 }
 \arguments{
-\item{tabela}{Species data (object class: \code{data.frame}. Species in columns.}
+\item{tabela}{Species data (object class: \code{data.frame}). Species in columns.}
 
 \item{gradiente}{Vector with the environmental gradient for each row of the species table.}
 

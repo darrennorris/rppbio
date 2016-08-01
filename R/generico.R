@@ -16,7 +16,7 @@
 #'  Function code is likely to need adaptation for specific use cases (e.g. more or less species).
 #'  Used to teach students how to adapt code from existing functions. 
 #' 
-#' @param tabela Species data (object class: \code{data.frame}. Species in columns.
+#' @param tabela Species data (object class: \code{data.frame}). Species in columns.
 #' @param gradiente Vector with the environmental gradient for each row of the species table.
 #' @param at Used to alter plotted position of the species names. Start with 1 and increase until obtain desired location.
 #' @param grad  Character of the name of the environmental gradient to appear on the graph.
