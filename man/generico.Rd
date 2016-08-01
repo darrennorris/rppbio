@@ -28,7 +28,7 @@ ordered along an environmental gradient.
 }
 \details{
 Ported from: https://ppbio.inpa.gov.br/sites/default/files/Generico\%20R . 
- Tried and tested code used to develop package and github. Plots the relative abundance of species in samples
+ Tried and tested code used to develop package and github. Plots the standardized relative abundance of species in samples
  ordered in relation to an environmental gradient. Species are plotted seperately. This ordering provides
  visual representation of the counts of different species that enables a clearly interpretable comparison of
  which species are found at the extremes of a gradient or occur through the range. 
