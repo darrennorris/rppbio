@@ -7,11 +7,11 @@
 generico(tabela, gradiente, at, grad, eixoY, eixoX)
 }
 \arguments{
-\item{tabela}{A data.frame with the species data. Species in columns.}
+\item{tabela}{Species data (object class: \code{data.frame}. Species in columns.}
 
 \item{gradiente}{Vector with the environmental gradient for each row of the species table.}
 
-\item{at}{Used to alter position of the species names. Start with 1 and increase until obtain desired location.}
+\item{at}{Used to alter plotted position of the species names. Start with 1 and increase until obtain desired location.}
 
 \item{grad}{Character of the name of the environmental gradient to appear on the graph.}
 
@@ -20,7 +20,7 @@ generico(tabela, gradiente, at, grad, eixoY, eixoX)
 \item{eixoX}{Name of x axis legend (character)}
 }
 \value{
-Plots bar charts of species abundances from sites 
+Function \code{generico} plots bar charts of species abundances from sites 
 ordered along an environmental gradient.
 }
 \description{
@@ -28,14 +28,22 @@ ordered along an environmental gradient.
 }
 \details{
 Ported from: https://ppbio.inpa.gov.br/sites/default/files/Generico\%20R . 
- Tried and tested code used to develop package and github.
+ Tried and tested code used to develop package and github. Plots the relative abundance of species in samples
+ ordered in relation to an environmental gradient. Species are plotted seperately. This ordering provides
+ visual representation of the counts of different species that enables a clearly interpretable comparison of
+ which species are found at the extremes of a gradient or occur through the range. 
+ Most effective with relatively few species (i.e. < 30).
+ 
+ The function is not general. It is not possible for users to ajust graphical parameters.
+ This means that the graph presented is unlikely to be correct for publication.
+ Function code is likely to need adaptation for specific use cases (e.g. more or less species).
+ Used to teach students how to adapt code from existing functions.
 }
 \examples{
 \dontrun{
 # load species and environmental data
 library(vegan) 
-data("mite")
-data("mite.env")  
+data(mite, mite.env)
 dfsp <- mite[,1:10] #select first 10 mite species 
 
 #plot 
