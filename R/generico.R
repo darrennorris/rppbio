@@ -46,8 +46,13 @@
 #' at=80,grad = "Water",eixoX="Site", eixoY="Count") 
 #' }
 generico<-function(tabela,gradiente,at,grad,eixoY,eixoX){
-  tabela<-as.matrix(tabela)
+#1. check data
+    tabela<-as.matrix(tabela)
   gradiente<-as.matrix(gradiente)
+  if(nrow(tabela) != nrow(gradiente)) stop("Species and environemntal 
+                                           data have different number of rows")
+  
+#2. sort sites and species 
   media.pond<-colSums(tabela*gradiente[,1])/colSums(tabela)
 # Ordenar parcelas de acordo com o gradiente
   sub.orden<-tabela[order(gradiente[,1],decreasing=F),]	
@@ -58,7 +63,7 @@ generico<-function(tabela,gradiente,at,grad,eixoY,eixoX){
   dados.pa[tabela>0]<-1
 ## para deletar possíveis colunas vazias (espécie que não ocorreu)
   ordenado<-sub.orde[,which(colSums(dados.pa)>0)] 
-#Plot
+#3. Plot
   par(mfrow=c(ncol(ordenado)+1,1),mar=c(0,4,0.2,10),oma=c(3,1,1,6))
   layout(matrix(1:(ncol(ordenado)+1)),
          heights=c(3,rep(1,ncol(ordenado))))
