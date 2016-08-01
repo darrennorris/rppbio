@@ -58,11 +58,11 @@ generico<-function(tabela,gradiente,at,grad,eixoY,eixoX){
   sub.orden<-tabela[order(gradiente[,1],decreasing=F),]	
 # colocar espécies ordenadas pela média ponderada
   sub.orde<-sub.orden[,order(media.pond,decreasing=T)] 
-
+# para deletar possíveis colunas vazias (espécie que não ocorreu)
   dados.pa<-matrix(0,nrow(tabela),ncol(tabela))
   dados.pa[tabela>0]<-1
-## para deletar possíveis colunas vazias (espécie que não ocorreu)
   ordenado<-sub.orde[,which(colSums(dados.pa)>0)] 
+  
 #3. Plot
   par(mfrow=c(ncol(ordenado)+1,1),mar=c(0,4,0.2,10),oma=c(3,1,1,6))
   layout(matrix(1:(ncol(ordenado)+1)),
@@ -83,5 +83,3 @@ generico<-function(tabela,gradiente,at,grad,eixoY,eixoX){
   mtext(eixoX,1,outer=T,font=2,line=1.2)
   mtext(eixoY,2,font=2,outer=T,line=-2)
 }
-
-
