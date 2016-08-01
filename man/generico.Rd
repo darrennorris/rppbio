@@ -9,7 +9,8 @@ generico(tabela, gradiente, at, grad, eixoY, eixoX)
 \arguments{
 \item{tabela}{Species data (object class: \code{data.frame}). Species in columns.}
 
-\item{gradiente}{Vector with the environmental gradient for each row of the species table.}
+\item{gradiente}{Vector with the environmental gradient for each row of the species table.
+Can only be a continuous variable i.e. factors will not work.}
 
 \item{at}{Used to alter plotted position of the species names. Start with 1 and increase until obtain desired location.}
 

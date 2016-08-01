@@ -18,6 +18,7 @@
 #' 
 #' @param tabela Species data (object class: \code{data.frame}). Species in columns.
 #' @param gradiente Vector with the environmental gradient for each row of the species table.
+#'    Can only be a continuous variable i.e. factors will not work.
 #' @param at Used to alter plotted position of the species names. Start with 1 and increase until obtain desired location.
 #' @param grad  Character of the name of the environmental gradient to appear on the graph.
 #' @param eixoY Name of y axis legend (character)
