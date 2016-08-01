@@ -61,12 +61,14 @@ generico<-function(tabela,gradiente,at,grad,eixoY,eixoX){
   par(mfrow=c(ncol(ordenado)+1,1),mar=c(0,4,0.2,10),oma=c(3,1,1,6))
   layout(matrix(1:(ncol(ordenado)+1)),
          heights=c(3,rep(1,ncol(ordenado))))
+#plot environmental gradient
   plot(sort(gradiente[,1]),axes=F,ylab="",
        mfg=c(21,1),lwd=10,las=2,lend="butt",
        frame.plot=F,xaxt="n",type="h",col="black",
        ylim=c(min(gradiente),max(gradiente)))
   axis(side=2,at=c(0,max(gradiente)),las=2)
-  mtext(grad,3,outer=T,font=2,line=-5,padj=-15.5,las=2)
+  mtext(grad,3,outer=T,font=2,line=-5,padj=-10.5,las=2)
+ #plot species
   for(i in 1:ncol(ordenado)){
     barplot(ordenado[,i],bty="l",axisnames=F,axes=FALSE,col="black")
     #axis(side=2,at=max(ordenado[,i]),las=2)
